@@ -14,4 +14,4 @@ crash.*.log
 terraform.rc
 
 
-variable.tf
+*/variable.tf
