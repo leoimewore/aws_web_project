@@ -16,4 +16,4 @@ terraform.rc
 
 */variable.tf
 
-*/*/variable.tf
+*/network-module/variable.tf
