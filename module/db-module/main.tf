@@ -47,3 +47,17 @@ resource "aws_db_subnet_group" "main" {
   }
 }
 
+resource "aws_secretsmanager_secret" "example" {
+  name = "example"
+}
+
+
+import {
+  to = aws_secretsmanager_secret.example
+  id = "arn:aws:secretsmanager:us-east-1:691490196261:secret:db_credentials-06Y90z"
+}
+
+data "aws_secretsmanager_secrets" "name" {
+  
+  
+}

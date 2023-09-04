@@ -17,12 +17,12 @@ variable "instance_class" {
   
 }
 variable "username" {
-    default = "admin"
+    default = ""
   
 }
 
 variable "password" {
-    default = "admin123"
+    default = ""
   
 }
 
