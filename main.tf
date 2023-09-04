@@ -20,21 +20,21 @@ module "vpc" {
   
 }
 
-# module "alb" {
-#   source = "./module/alb-module"
+module "alb" {
+  source = "./module/alb-module"
 
-#   vpc-id =module.vpc.vpc_id
-#   public_subnets = module.vpc.public_subnets
-# }
+  vpc-id =module.vpc.vpc_id
+  public_subnets = module.vpc.public_subnets
+}
 
 
-# module "db" {
+module "db" {
 
-#   source = "./module/db-module"
-#   vpc-id =module.vpc.vpc_id
-#   websg = module.alb.websg
-#   private_subnets = module.vpc.private_subnets
-# }
+  source = "./module/db-module"
+  vpc-id =module.vpc.vpc_id
+  websg = module.vpc.privatesg
+  private_subnets = module.vpc.private_subnets
+}
 
 module "s3" {
 

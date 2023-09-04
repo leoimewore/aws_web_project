@@ -17,3 +17,5 @@ terraform.rc
 /variable.tf
 
 */network-module/variable.tf
+
+/Users/leonardisaac/Documents/aws_web_project/module/db-module/variable.tf

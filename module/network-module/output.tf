@@ -12,3 +12,8 @@ output "private_subnets" {
     value =[for s in data.aws_subnet.private : s.id]
 }
 
+output "privatesg" {
+    value = aws_security_group.private_sg.id
+
+}
+

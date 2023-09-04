@@ -95,12 +95,12 @@ resource "aws_lb" "public" {
   }
 }
 
-resource "aws_lb_target_group" "test" {
-  name     = "tf-example-lb-tg"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = var.vpc-id
-}
+# resource "aws_lb_target_group" "test" {
+#   name     = "tf-example-lb-tg"
+#   port     = 80
+#   protocol = "HTTP"
+#   vpc_id   = var.vpc-id
+# }
 
 resource "aws_lb_target_group" "test" {
   name       = "my-app-eg1"
